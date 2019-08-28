@@ -1,11 +1,19 @@
+/*.inline .block .inline-block {
+  border: 1px solid black;
+}
+*/
+
 .inline {
     display: inline;
+    border: 1px solid black;
 }
 
 .block {
     display: block;
+    border: 1px solid black;
 }
 
 .inline-block {
     display: inline-block;
+    border: 1px solid black;
 }

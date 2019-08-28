@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid black;
+  width: 500px;
+  height: 600px;
+  background-image: url("https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTH66k9nrbOyXHwI0Z69c8Y2rq5zqc_zWkCC5iIzAlE72ltrhGwG0HsDBELl1kURC6-b95pW9q6kIJQVnEfyQUsDPqxgiqgxkVPXUt2YB99LbiwsMyw3S4g&usqp=CAE")
+}
+
+section {
+  width: 100px;
+  background: #990012;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+}
+
+div {
+  width: 200px;
+  background: #990012;
+  background: orange;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+}
