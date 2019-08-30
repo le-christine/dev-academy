@@ -1,0 +1,142 @@
+
+body {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  height: 550px;
+  width: 318px;
+  margin: 0 auto;
+}
+
+.outside-left {
+  grid-column: 1;
+  display: grid;
+  grid-template-rows:  20% 5% 5% 10% 5% 10% 35%;
+}
+
+.left-button-1 {
+  grid-row: 2;
+  background-color: #D0D3D4;
+  margin-left: 30px;
+  width: 10%;
+}
+
+.left-button-2 {
+  grid-row: 4;
+  background-color: #D0D3D4;
+  height: 55px;
+  margin-left: 30px;
+  width: 10%;
+}
+
+.left-button-3 {
+  grid-row: 6;
+  background-color: #D0D3D4;
+  height: 55px;
+  margin-left: 30px;
+  width: 10%;
+
+}
+
+.outside-right {
+  grid-column: 3;
+  display: grid;
+  grid-template-rows: 20% 5% 5% 10% 5% 10% 35%;
+}
+
+.right-button {
+  grid-row: 4;
+  background-color: #D0D3D4;
+  height: 55px;
+  width: 10%;
+}
+
+.inside-device {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+  border: 2px solid #CFD1D3;
+  height: 500px;
+  width: 250px;
+  border-radius: 30px;
+}
+
+header {
+  width: 70px;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.mic {
+  margin-left: 30%;
+  width: 7px;
+  height: 7px;
+  background-color: black;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+.bottom {
+  margin-top: -50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.speaker {
+  width: 50px;
+  height: 5px;
+  background-color: black;
+  border-radius: 25%;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.camera {
+  width: 15px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+
+.status-bar {
+  border-top: 1px solid black;
+  grid-row: 2;
+  background: url("/images/iphone-status-bar-white.png");
+  background-size: cover;
+  height: 10px;
+  width: 211px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  grid-row: 2;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0 7%;
+  background: url("/images/beach.jpg");
+  background-size: cover;
+
+}
+
+footer {
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  border-radius: 50%;
+  border: 2.2px solid rgba(84,86,87,.5);
+  width: 40px;
+  height: 40px;
+}
