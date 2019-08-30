@@ -1,0 +1,51 @@
+body {
+  font-family: 'Arial';
+  width: 100%;
+}
+
+section {
+  border: 1px solid black;
+  width: 70px
+  height: 70px;
+  background-color: lightgray;
+  padding: 50px;
+}
+
+
+
+.square-1 {
+  width: 35px;
+  height:35px;
+  background-color: white;
+  -webkit-animation: rotation 2s infinite linear;
+  animation-iteration-count: 1;
+  margin: 0 auto;
+
+}
+
+.square-2 {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  -webkit-animation: rotation 2s infinite linear;
+  animation-iteration-count: 5;
+  margin: 0 auto;
+}
+
+.square-3 {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  -webkit-animation: rotation 2s infinite linear;
+  animation-iteration-count: infinite;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
