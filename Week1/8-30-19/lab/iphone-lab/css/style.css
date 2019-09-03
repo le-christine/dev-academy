@@ -1,5 +1,6 @@
 
 body {
+  object-fit: contain;
   display: grid;
   grid-template-columns: 10% 80% 10%;
   height: 550px;
@@ -106,7 +107,7 @@ header {
 .status-bar {
   border-top: 1px solid black;
   grid-row: 2;
-  background: url("/images/iphone-status-bar-white.png");
+  background: url("../images/iphone-status-bar-white.png");
   background-size: cover;
   height: 10px;
   width: 211px;
@@ -122,7 +123,7 @@ section {
   border-left: 1px solid black;
   border-bottom: 1px solid black;
   margin: 0 7%;
-  background: url("/images/beach.jpg");
+  background: url("../images/beach.jpg");
   background-size: cover;
 
 }
