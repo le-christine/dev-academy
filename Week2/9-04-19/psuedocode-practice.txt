@@ -1,0 +1,17 @@
+const looneyTunesChars = ["Bugs Bunny", "Daffy Duck", "Tweety", "Sylvester", "Elmer Fudd", "Porky Pig", "Taz"];
+
+PROGRAM printEvenConditional:
+  LOOP- initialize i equal 0 to access array
+      conditional i less than length of array
+      increment increase i by 1
+  if i number divided by 2 has no remainder and is not zero:
+  print out the element at i
+
+// 4. Print out the even-numbered items in the array using a conditional statement.
+function printEvenConditional() {
+  for (let i = 0; i<looneyTunesChars.length; i++) {
+    if (i % 2 == 0 && i != 0) {
+    console.log(looneyTunesChars[i]);
+    }
+  }
+}
