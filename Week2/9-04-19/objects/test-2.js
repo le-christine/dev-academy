@@ -82,6 +82,7 @@ Note: Make sure to practice using both syntaxes for retrieving properties (dot n
 
 */
 
+/*
 function monkeyObject(name, species, foodsEaten) {
   this.name = name,
   this.species = species,
@@ -155,3 +156,44 @@ function Monkey(name, species, foodsEaten) {
 const Casey = new Monkey("Casey", "Human", ["Hotdog", "Cheeseburger", "Pizza"]);
 
 */
+
+/*
+Using an object constructor, write an object 'Person' that has a name
+an age, a favorite food, and an array of favorite movies.
+Write methods for the object that will print out the person's
+name, age, and favorite food, and write a method to add a movie to
+the person's favorite movies.
+*/
+
+
+function newPersonObject (name, age, faveFood, faveMovies) {
+  this.name = name;
+  this.age = age;
+  this.faveFood = faveFood;
+  this.faveMovies = faveMovies;
+  this.addFaveMovie = function (movieName) {
+    if (typeof(this.faveMovies) === "object") {
+    this.faveMovies.push(movieName);
+    } else if (typeof(this.faveMovies) === "string") {
+    this.faveMovies += ", " + movieName;
+    }
+  }
+}
+
+const Christine = new newPersonObject("Christine", 23, "Pad thai", "Spirited Away, Howl's Moving Castle");
+const Christine2 = new newPersonObject("Christine", 23, "Pad thai", ["Spirited Away", "Howl's Moving Castle"]);
+
+// Christine.addFaveMovie("My neighbor Totoro");
+// Christine2.addFaveMovie("My neighbor Totoro")
+// console.log(Christine);
+// console.log(Christine2);
+
+function displayInfo(Person) {
+  for (let key in Person) {
+    if (typeof(Person[key]) !== "function") {
+      console.log(`${key} = ${Person[key]}`);
+    };
+  };
+}
+console.log(Christine);
+displayInfo(Christine);

@@ -4,7 +4,7 @@
 const myObject = {};
 */
 
-// Constructor Function - use keyword new to create a new object out of the template
+// Object Constructor Function - use keyword new to create a new object out of the template
 
 // (2)
 function Classroom(name, numberOfStudents) {
