@@ -1,0 +1,19 @@
+Take 10 minutes with a partner to create a pseudocode of the game Concentration.
+
+The user should see a grid of cards. Clicking a card reveals it and allows the user to click another card. If they match, the cards stay up and, if not, they flip back over. Users get a point for every pair they flip. The game ends after one minute or when all of the cards have been matched.
+
+When you're done, we'll spend five minutes sharing approaches as a class.
+
+PROGRAM concentration:
+while time is less than 60 seconds:
+  START with view of cards
+  USE mouse to click a card
+  show card
+  USE mouse to click another card
+  show card
+    IF the cards don't match:
+      BOTH cards flip over
+    IF the cards do match:
+      BOTH cards remain flipped
+      USER gets one point
+  end game
