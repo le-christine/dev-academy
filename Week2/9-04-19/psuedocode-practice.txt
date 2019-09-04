@@ -5,7 +5,9 @@ PROGRAM printEvenConditional:
       conditional i less than length of array
       increment increase i by 1
   if i number divided by 2 has no remainder and is not zero:
-  print out the element at i
+    print out the element at i
+    endif
+  end loop
 
 // 4. Print out the even-numbered items in the array using a conditional statement.
 function printEvenConditional() {
