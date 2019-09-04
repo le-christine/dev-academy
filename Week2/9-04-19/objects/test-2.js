@@ -86,9 +86,9 @@ function monkeyObject(name, species, foodsEaten) {
   this.name = name,
   this.species = species,
   this.foodsEaten = foodsEaten,
-  this.eatSomething = function() {
+  this.eatSomething = function(foodString) {
     console.log(`Hi, I am a monkey. My name is ${this.name} and I am a ${this.species}.
-      Today I ate ${this.foodsEaten}.`);
+      Today I ate ${this.foodsEaten} and ${foodString}.`);
   }
 }
 //
@@ -98,7 +98,7 @@ const monkeyKoko = {
   name: "Koko",
   species: "gorilla",
   foodsEaten: "plaintains, calendulas, carnations, pansies, and roses",
-  eatSomething: function() {
+  eatSomething: function(foodString) {
     console.log(`Hi, I am a monkey. My name is ${this.name} and I am a ${this.species}.
       Today I ate ${this.foodsEaten}.`);
   }
@@ -116,9 +116,9 @@ monkeyJack.name = "Jack";
 monkeyJack.species = "Capuchin";
 monkeyJack.foodsEaten = "oysters, quail eggs";
 
-console.log(monkeyGeorge, monkeyGeorge.eatSomething());
-console.log(monkeyKoko, monkeyKoko.eatSomething());
-console.log(monkeyJack, monkeyJack.eatSomething());
+// console.log(monkeyGeorge, monkeyGeorge.eatSomething("corn"));
+// console.log(monkeyKoko, monkeyKoko.eatSomething());
+// console.log(monkeyJack, monkeyJack.eatSomething());
 
 const showMonkeyBio = (monkeyObj) => {
   for (let fact in monkeyObj) {
@@ -129,6 +129,29 @@ const showMonkeyBio = (monkeyObj) => {
 }
 
 
-showMonkeyBio(monkeyGeorge);
-showMonkeyBio(monkeyKoko);
-showMonkeyBio(monkeyJack);
+// showMonkeyBio(monkeyGeorge);
+// showMonkeyBio(monkeyKoko);
+// showMonkeyBio(monkeyJack);
+
+/* In class solution
+
+function Monkey(name, species, foodsEaten) {
+  this.name = name;
+  this.species = species;
+  this.foodsEaten = foodsEaten;
+  this.eatSomething = function(foodString) {
+    this.foodsEaten.push(foodString);
+  };
+  this.introduce = function() {
+    console.log(`Hello my name is ${this.name} and I am a ${this.species}, I've also eaten: ${this.foodsEaten}`);
+  };
+  this.exercise = function() {
+    for (const key in this) {
+      const value = this[key];
+      console.log(key + " " + value);
+    }
+  };
+}
+const Casey = new Monkey("Casey", "Human", ["Hotdog", "Cheeseburger", "Pizza"]);
+
+*/
