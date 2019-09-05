@@ -29,7 +29,7 @@ This will help us track your progress and it will give you practice writing good
 
 // PART 0: Just DO it!!
 const justDoIt = (aName) => {
-  return aName + ", JUST DO IT!";
+  alert(aName + ", JUST DO IT!");
 };
 
 //console.log(justDoIt('Christine'));
@@ -44,8 +44,15 @@ else:
   return "word is short"
 */
 
+/**
+ * [bigOrSmallString checks to see length of string and
+ * if it is longer than 10 characters]
+ * @param  {[String} aStr [string to be evaluated]
+ * @return {[String}
+ */
+
 const bigOrSmallString = (aStr) => {
-  if (aString.length > 10) {
+  if (aStr.length > 10) {
     return "This word is loooooong!";
   } else {
     return "This word is short 😬";
@@ -55,12 +62,19 @@ const bigOrSmallString = (aStr) => {
 //console.log(bigOrSmallString("thesortinghat"));
 
 // PART 2: Odd or Even String Length?
+/**
+ * [oddOrEvenString Check the length of a string to see if it is even or odd]
+ * @param  {String} aStr [description]
+ * @return {String}      [description]
+ */
 const oddOrEvenString = (aStr) => {
-  if (aStr.length % 2 !== 0) {
-    return "This string's length is odd..";
-  } else {
-    return "This string length is TOTALLY even!";
-  }
+  // if (aStr.length % 2 !== 0) {
+  //   return "This string's length is odd..";
+  // } else {
+  //   return "This string length is TOTALLY even!";
+  // }
+  // conditional ? <true> : <false>;
+  return str.length%2!==0?"This string's length is odd..":"This string length is TOTALLY even!";
 };
 //console.log(oddOrEvenString('four'));
 //console.log(oddOrEvenString('seven'));
@@ -73,6 +87,12 @@ is arr length is 0dd, take the middle number by slicing floor(len/2)
 if arry is even, take the two middle numbers and find its average
 
 */
+
+/**
+ * Return the median of the array of numbers
+ * @param  {Array of numerics} anArr
+ * @return {Integer}
+ */
 const medianOfArray = (anArr) => {
   sortedArr = anArr.sort();
   let arrLength = sortedArr.length;
@@ -87,9 +107,25 @@ const medianOfArray = (anArr) => {
 
 // console.log(medianOfArray([4,6,5,6]));
 // console.log(medianOfArray([10, 19, 20, 25, 18]));
+
 // PART 4: Sum Array
+/**
+ * Return the sum of the array of numbers
+ * @param  {Array of numerics} anArr
+ * @return {Integer}       sum of each element of arrays
+ */
+const sumArray = (anArr) => {
+  let sum = 0;
+  if (anArr.length > 0) {
+    for (let i = 0; i<anArr.length; i++) {
+      sum+= anArr[i];
+      }
+  }
+  return sum;
+};
 
-
+console.log(sumArray([]));
+console.log(sumArray([1,2,3,4,5]));
 
 // PART 5: Vowel Count
 
