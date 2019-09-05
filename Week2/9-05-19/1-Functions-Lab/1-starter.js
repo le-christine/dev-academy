@@ -44,7 +44,7 @@ else:
   return "word is short"
 */
 
-const bigOrSmallString = (aString) => {
+const bigOrSmallString = (aStr) => {
   if (aString.length > 10) {
     return "This word is loooooong!";
   } else {
@@ -55,8 +55,15 @@ const bigOrSmallString = (aString) => {
 //console.log(bigOrSmallString("thesortinghat"));
 
 // PART 2: Odd or Even String Length?
-
-
+const oddOrEvenString = (aStr) => {
+  if (aStr.length % 2 !== 0) {
+    return "This string's length is odd..";
+  } else {
+    return "This string length is TOTALLY even!";
+  }
+};
+//console.log(oddOrEvenString('four'));
+//console.log(oddOrEvenString('seven'));
 
 // PART 3: Median
 
