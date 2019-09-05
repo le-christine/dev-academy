@@ -1,7 +1,8 @@
 function showCoords(event) {
+  console.log(event);
   let x = event.clientX;
   let y = event.clientY;
-  let coordinates = "x coo " + x + " Y coo " + y;
+  let coordinates = "X: " + x + " Y: " + y;
   document.getElementById("demo").innerHTML = coordinates;
 }
 
