@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Example 2</title>
+  </head>
+  <body>
+    <p>Please enter your first name: </p>
+    <input type="text" id="fname" onchange="myFunction()"></input>
+    <script>
+      function myFunction() {
+        let x = document.getElementById("fname");
+        // console.log(x);
+        x.value = x.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>
