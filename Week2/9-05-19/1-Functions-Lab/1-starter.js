@@ -150,8 +150,23 @@ const vowels = function(str) {
 }
 
 // PART 6: Initials
+//
+/**
+ * Return the initials of every word in a person's aName
+ * @param  {string} str
+ * @return {string}     
+ */
 
-
+const initials = function(str) {
+  if (str == undefined) return "ERR: Enter a valid input";
+  let nameArray = str.split(" ");
+  let result = "";
+  for (let i = 0; i<nameArray.length; i++) {
+    let firstChar = nameArray[i].charAt(0);
+    result += firstChar.toUpperCase();
+  }
+  return result;
+}
 
 // BONUS: Days of the week
 
