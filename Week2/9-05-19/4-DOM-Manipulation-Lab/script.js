@@ -56,8 +56,12 @@ removeLastFavoriteThing();
   // Remember you might have to iterate through the list of elements
   function makeSpecialTitlesBigger() {
     let specialTitles = document.querySelectorAll('.special-title');
+    for (let i=0; i<specialTitles.length; i++) {
+      specialTitles[i].style.fontSize = "2rem";
+    }
   }
 
+makeSpecialTitlesBigger();
 
   // Part 5
   // Turns out DOM never raced in Chicago. Access the Past Races list and remove Chicago.
