@@ -67,8 +67,26 @@ const oddOrEvenString = (aStr) => {
 
 // PART 3: Median
 
+/*
+sort the array
+is arr length is 0dd, take the middle number by slicing floor(len/2)
+if arry is even, take the two middle numbers and find its average
 
+*/
+const medianOfArray = (anArr) => {
+  sortedArr = anArr.sort();
+  let arrLength = sortedArr.length;
+  if (arrLength % 2 !== 0) {
+    let median = sortedArr[Math.floor(arrLength/2)];
+    return median;
+  } else {
+    let median = (sortedArr[Math.floor(arrLength/2)] + sortedArr[Math.floor(arrLength/2-1)])/2;
+    return median;
+  }
+};
 
+// console.log(medianOfArray([4,6,5,6]));
+// console.log(medianOfArray([10, 19, 20, 25, 18]));
 // PART 4: Sum Array
 
 
