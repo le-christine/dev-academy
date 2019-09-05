@@ -66,10 +66,15 @@ makeSpecialTitlesBigger();
   // Part 5
   // Turns out DOM never raced in Chicago. Access the Past Races list and remove Chicago.
   function RemoveChicagoRace() {
-
+    let pastRacesList = document.querySelector('#past-races');
+    for (let i = 0; i<pastRacesList.children.length; i++) {
+      if (pastRacesList.children[i].innerText === "Chicago") {
+        pastRacesList.children[i].remove();
+      }
+    }
   }
 
-
+RemoveChicagoRace()
 
 // Creating New DOM Elements
 
@@ -77,21 +82,31 @@ makeSpecialTitlesBigger();
   // Let's add to DOM's  Past Races  list.
   // Create a new <li> element, change the new <li> text to the name of a city, and append it to the  Past Races  list.
   function addPastRace() {
-
+    let newCity = document.createElement('li');
+    newCity.innerText = "Paris";
+    document.querySelector('#past-races').appendChild(newCity);
   }
-
+addPastRace();
 
   // Part 7
   // Create a new .blog-post corresponding to the new city added in Part 6.
   // You will have to create a new <div> with class of .blog-post, a new <h2> with text, and a new <p> with some text.
   // Think about what order you want to create the elements, and what order you want to append them in.
   function createNewBlogPost() {
-
+    let newBlog = document.createElement('div');
+    newBlog.classList = "blog-post purple";
+    let newHeader = document.createElement('h2');
+    newHeader.innerText = "Paris"
+    newBlog.appendChild(newHeader);
+    let newParagraph = document.createElement('p');
+    newParagraph.innerText = "I ATE CROSSIANTS!";
+    newBlog.appendChild(newParagraph);
+    document.querySelector('.main').appendChild(newBlog);
   }
 
 
 
-
+createNewBlogPost();
 
 
 });
