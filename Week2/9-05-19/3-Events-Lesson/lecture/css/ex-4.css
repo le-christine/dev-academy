@@ -1,0 +1,11 @@
+.circle {
+  display: inline-block;
+  background-color: teal;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+body {
+  text-align: center;
+}
