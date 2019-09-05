@@ -32,11 +32,27 @@ const justDoIt = (aName) => {
   return aName + ", JUST DO IT!";
 };
 
-console.log(justDoIt('Christine'));
+//console.log(justDoIt('Christine'));
 
 // PART 1: Big or Small String?
 
+/* pseudocode
+program bigorsmallstring accepts a string
+if string length > 10:
+  return "string is long"
+else:
+  return "word is short"
+*/
 
+const bigOrSmallString = (aString) => {
+  if (aString.length > 10) {
+    return "This word is loooooong!";
+  } else {
+    return "This word is short 😬";
+  }
+};
+
+//console.log(bigOrSmallString("thesortinghat"));
 
 // PART 2: Odd or Even String Length?
 
