@@ -124,12 +124,30 @@ const sumArray = (anArr) => {
   return sum;
 };
 
-console.log(sumArray([]));
-console.log(sumArray([1,2,3,4,5]));
+// console.log(sumArray([]));
+// console.log(sumArray([1,2,3,4,5]));
 
 // PART 5: Vowel Count
 
-
+/**
+ * Return the number of vowels in the String
+ * @param  {string} str
+ * @return {Integer}     number of vowels
+ */
+const vowels = function(str) {
+  if (str == undefined) return -1;
+  let vowels = 0;
+  for (let ch of str) {
+    if (ch == 'a' ||
+        ch == 'e' ||
+        ch == 'i' ||
+        ch == 'o' ||
+        ch =='u') {
+          vowels++;
+        }
+  }
+  return vowels;
+}
 
 // PART 6: Initials
 
