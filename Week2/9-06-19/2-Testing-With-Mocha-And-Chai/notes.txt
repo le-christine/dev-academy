@@ -1,0 +1,26 @@
+Testing
+
+blackbox testing : you know the output. e.g. if you have an html page, the tester knows that they will receive the web page at the end.
+the ogre/adv. game is a type of blackbox testing - you know somebody will win
+
+whitebox testing: somebody who doesn't know much about code. you know the software requirements and they test the code based on that. 
+
+agile testing: you test as you go by. e.g. what we will do. write 1st function -> test it, write 2nd function -> test 1st and 2nd function
+
+gray box testing: combines black and white testing. the person tests the code with the understanding the code and the requirements.
+
+ad-hoc testing: gets random users to interact with the code. e.g. UI/UX designers will do ad-hoc testing to ensure whatever users throw at it, it works. users gets paid to interact.
+
+Testing methods.
+- functional testing:
+unit test - e.g. two engineers write diff number of functions, they need to combine them to make sure it works
+integration test - you have two units, if you have a team of 12 developers (3x3x3x3) they need to ensure all these functions work together
+system test- running a software on different OS and OS versions
+acceptance test - passing the final product to UI/UX and Product Managers
+
+- non functional testing: 
+performance test
+security test 
+usability test (UI/UX)
+compatibility test - if your software can run on multiple operating systems
+

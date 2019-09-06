@@ -1,0 +1,40 @@
+Favorite app - Starbucks app
+
+- I go onto the starbucks app to order coffee for pick up so I don't have to wait in line
+
+
+features I use include selecting or customizing my drink, locating the closest starbucks for pick up, and submitting my payment
+
+test case 1:
+selecting or customizing my drink
+conditionals
+- does it display size
+- does it display hot/cold
+- does it display temperature or ice level 
+- can user select size
+- can user select hot/cold
+- can user select temperature or ice level
+user story: I want a grande iced latte. i go through the screens to customize this order
+
+test case 2:
+locating the closest starbucks
+conditionals 
+- does it accurately display my geo location
+- does it accuartely display my zip code
+- does the map zoom in and out
+- does the map show the walking distance
+- does the map show the driving distance
+- does the map warn you if the distance is too far
+
+test care 3:
+submitting my payment
+conditionals
+- does it display order summary
+- does it display price
+- does it add the price correctly
+- does it give me options on how to pay apple pay
+- does it give me options to pay with credit card (input)
+- does it give me option to pay with my starbucks card
+
+
+
