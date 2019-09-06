@@ -1,29 +1,17 @@
-/**
- *
- * @param  {Integer} a
- * @param  {Integer} b
- * @return {Integer}
- */
+function buildName (name) {
+  let greeting = `Hello ${name}!`;
+  // this is a closure. It is  a function that has access to the greeting
+  // if sayName() wasn't nested it would run once and be sent to the garbage
+  // Closures keep things around in memory
+  let sayName = function () {
+    let welcome = greeting + " Welcome!";
+    console.log(greeting);
+  };
 
-function foo(a,b) {
-    console.log(a+b);
-    return a+b;
+  return sayName();
 }
 
-/**
- *
- */
-foo(1,1);
-foo(2,2);
+var sayName = buildName("John");
 
-// Closures - a fuction that is nested in another function and thereby has access to it's parents' scope.
-// for example - function anAnimal () {
-//  name = 'someName';
-//  type = 'someType';
-//  function foo () {
-//  };
-//  }
-//
-//  if foo(){} were outside it only lives and runs once in the memory.
-//  However, because it is inside the function, if we were to make another anAnimal object
-//  it can live again. this is the power of closure. 
+
+  // scope and closure are similar, but scope is only applied to if (x = 100) { a scope not a closure} else { another scope }
