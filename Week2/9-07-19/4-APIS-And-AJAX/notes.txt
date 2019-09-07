@@ -1,0 +1,65 @@
+Intro to APIs
+
+	get/post/patch/put
+
+* important paradigm *
+why re-write? e.g. google maps, OAUTH, credit card payment
+server (api) --> response <-- local computer 
+
+Callbacks
+
+promise -> pending -> success .then OR catch() error
+
+HTTP
+get - get info from endpoint / get data from the server
+post - send data/"payload" to create field / send data to the server
+patch - send data/"payload" to update field
+delete - send req to del field data 
+put - send data/"paylod" to replace field data there / updating an entry (e.g. user wants to update their email address)
+
+when you retrieve info from the server, you get an object. back in the day it was an XML but it was hard for computers to parse. Now we get JSON (JavaScript Object Notation).
+
+dumb it down- what is an API? An API is short for Application Programming Interface. An API is like a library, you borrow a book from the library to help write your book report.
+
+
+AJAX - Asynchronous JavaScript and XML
+- created by Microsoft
+- Since JavaScript is single threaded (start at point A, go to point B) it is synchronous. However you can create JavaScript environments with node.js and other libraries to make it async; you can fire off a request while having the program running. when the request is finished it goes back (e.g. gmail continues to update your inbox without you having to refresh), AJAX is a way to make JS asynchronous
+- This is done by using a closure. you use a callback fcn
+3 statuses:
+Pending
+Success
+Failure
+
+These are known as promises. 
+A promise is an object that represents the state of an asynchronous operation (e.g. error 405, 505, etc).
+
+function facebook() {
+	fetch (http://....);
+	.then (response data {
+
+		this is a closure
+	}
+	.catch(err) {
+	another closure 
+	} 
+	.finally() {
+	// this will always run no matter what 
+	}
+}
+
+API ENDPOINTS - links you go to for responses
+
+fetch('https://swapi.co/api/planets/1/')
+  .then((response) => {
+    return response.json();
+  })
+  .then((response) => {
+  	console.log(response);
+  })
+  .catch((err) => {
+  	console.log(err);
+  })
+  .finally(() => {
+  	console.log('done');
+  }) 
