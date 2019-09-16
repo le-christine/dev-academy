@@ -1,24 +1,24 @@
 public class Sample {
+    // static int mySum = 0;
+    int mySum = 0;
+
     public static void main(String[] args) {
-        /*
-         Fizz buzz is a game about division.
-         Create a program that will iterate through numbers 1 to 101, and log each number in the console.
+        int value = getSum();
+        /* mySum = getSum(); =>
+        cannot do this because getSum() is a static method
+        mySum belongs to the Object, mySum is private by default */
 
-        If the number is divisible by three, the word fizz should be logged instead of logging the number itself.
-        If the number is divisible by five, the word buzz should be logged.
-        If the number is divisible by both three and five, the word fizzbuzz should be logged.
-         */
-
-        for (int i = 1; i < 101; i++ ) {
-            if (i % 3 == 0 && i % 5 != 0) {
-                System.out.println("Fizz");
-            } else if (i % 5 == 0 && i % 3 != 0) {
-                System.out.println("Buzz");
-            } else if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("FizzBuzz");
-            } else {
-                System.out.println(i);
-            }
-        }
+        // mySum = getSum();
+        System.out.println(value);
     }
+
+    /**
+     * Method getSum()
+     */
+    public static int getSum() {
+        int sum = 2 + 2;
+        return sum;
+    }
+
+    
 }
