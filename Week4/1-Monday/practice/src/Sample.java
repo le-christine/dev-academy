@@ -1,18 +1,16 @@
 public class Sample {
     public static void main(String[] args) {
-        String blue = "blue";
-//        boolean withSign = (blue == "blue");
-//        System.out.println(withSign);
+        String food = "apple";
 
-        String bl = "bl";
-        String ue = "ue";
-        System.out.println(bl+ ue);
-        boolean withSign = (bl + ue == blue); //location memory differs, so false
-        // boolean withSign = (bl + ue).equals(blue);
-        System.out.println(withSign);
-
-//        int x; // declaration
-//        x = 100; // initalization
-//        System.out.println(x);
+        switch (food) {
+            case "apple":
+                System.out.println("Apple");
+                break;
+            case "pear":
+                System.out.println("Pear");
+                break;
+            default:
+                System.out.println("Cannot find the food");
+        }
     }
 }
