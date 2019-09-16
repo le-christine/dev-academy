@@ -9,7 +9,7 @@ public class Sample {
         If the number is divisible by both three and five, the word fizzbuzz should be logged.
          */
 
-        for (int i = 1; i < 102; i++ ) {
+        for (int i = 1; i < 101; i++ ) {
             if (i % 3 == 0 && i % 5 != 0) {
                 System.out.println("Fizz");
             } else if (i % 5 == 0 && i % 3 != 0) {
