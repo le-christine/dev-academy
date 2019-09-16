@@ -1,24 +1,29 @@
 public class Sample {
-    // static int mySum = 0;
-    int mySum = 0;
-
     public static void main(String[] args) {
-        int value = getSum();
-        /* mySum = getSum(); =>
-        cannot do this because getSum() is a static method
-        mySum belongs to the Object, mySum is private by default */
-
-        // mySum = getSum();
-        System.out.println(value);
+        int answer = Calc(10,10,'a');
+        boolean passOrFail = getScores(3.9, 'a');
+        System.out.println(answer);
+        System.out.println(passOrFail);
     }
 
-    /**
-     * Method getSum()
-     */
-    public static int getSum() {
-        int sum = 2 + 2;
-        return sum;
+    public static int Calc(int a, int b, char choice) {
+        int result = 0;
+        switch (choice) {
+            case 'a':
+                // cannot return a + b from here because the whole method has to return
+                result = a+b;
+                break;
+            case 'm' :
+                result = a*b;
+                break;
+            default:
+                System.out.println("Enter the correct option");
+        }
+        return result;
     }
 
-    
+    public static boolean getScores(double gpa, char letterGrade) {
+        return gpa > 3.1 && letterGrade == 'A' || letterGrade == 'a';
+    }
+
 }
