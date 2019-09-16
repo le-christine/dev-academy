@@ -1,6 +1,13 @@
+import java.util.Scanner;
+
 public class Sample {
     public static void main(String[] args) {
-        int answer = Calc(10,10,'a');
+
+        // how to get user input
+        Scanner input = new Scanner(System.in); // creates a new Scanner object from the java.util library;
+        int input1 = input.nextInt();
+        int input2 = input.nextInt();
+        int answer = Calc(input1, input2,'a');
         boolean passOrFail = getScores(3.9, 'a');
         System.out.println(answer);
         System.out.println(passOrFail);
