@@ -67,7 +67,7 @@ public class Main {
       // TODO: Complete the following variable declarations, find the typo, and replace the /*something*/'s in the String with the proper variables.
 
         int creditCardDebt2010 = 15_355;
-        int totalDebt2010 = 129_579;
+        int totalDebt2010 = 129_579; // _ is same as , makes it easier to read
         String debt = String.format("Debt is an unwelcome guest at the table in many American households. Back in the late 1940s and early 1950s, the average American consumer had less than $%d in total personal debt. Today the average U.S. household with debt carries $%d in credit card debt and $%d in total debt.", avgDebt1950, creditCardDebt2010, totalDebt2010);
         System.out.println(debt);
 
@@ -78,11 +78,13 @@ public class Main {
 
       double debtIncomeRatio1950 = (double) averageFamilyIncome1950 / (double) avgDebt1950;
       double debtIncomeRatio2015 = (double) averageFamilyIncome2015 / (double) totalDebt2010;
-      double debtIncomeRatioChange = debtIncomeRatio1950 - debtIncomeRatio2015;
+      //double debtIncomeRatioChange = debtIncomeRatio1950 - debtIncomeRatio2015;
 
       // EXTRA: Round the answer to two decimal places.
-      double roundOff = Math.round((debtIncomeRatioChange * 100.0) /100);
-      System.out.println(roundOff);
+      // 3.141596 -> 314.1596 -> 314 -> 3.14
+      double roundOff = Math.round(debtIncomeRatio1950 * 100.0) / 100.0;
+      double roundOff2 = Math.round(debtIncomeRatio2015 * 100.0) / 100.0;
+      System.out.println(Math.round((roundOff2 - roundOff) * 100.0) / 100.0);
     }
 
 }
