@@ -1,12 +1,15 @@
 public class Sample {
     public static void main(String[] args) {
-        int age = 18;
-        double gpa = 3.2;
-        boolean isTrue = false;
-        if (!isTrue) {
-            System.out.println("Good student");
-        } else {
-            System.out.println("Wait list");
-        }
+        String blue = "blue";
+//        boolean withSign = (blue == "blue");
+//        System.out.println(withSign);
+
+        String bl = "bl";
+        String ue = "ue";
+        System.out.println(bl+ ue);
+        boolean withSign = (bl + ue == blue);
+        // boolean withSign = (bl + ue).equals(blue);
+        System.out.println(withSign);
+
     }
 }
