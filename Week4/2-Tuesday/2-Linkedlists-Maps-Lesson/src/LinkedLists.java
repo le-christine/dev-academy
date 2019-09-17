@@ -1,35 +1,14 @@
-import java.util.List;
-import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.HashMap;
 
 public class LinkedLists {
     public static void main(String args[]) {
-        /*
-        ArrayList<String> myList = new ArrayList<>();
+        // HashMap similar to object, has key value pairs
+        HashMap<String, String> studentMap = new HashMap<String, String>();
 
-        myList.add("Cookies!");
-        myList.add("Ice cream!");
+        studentMap.put("195abc", "Mabel");
+        studentMap.put("542jjjk", "Kareem");
 
-        String[] cookieFlavors = new String[]{"Chocolate Chip", "Oatmeal Raisin"};
-        List<String> stringcookieFlavors = Arrays.asList(cookieFlavors);
-         */
-        
-        LinkedList<String> iceCreamFlavors = new LinkedList<>();
-
-        iceCreamFlavors.add("Oreo");
-        iceCreamFlavors.add("Cherry Garcia");
-
-        LinkedList<Integer> quizPoints = new LinkedList<Integer>();
-        quizPoints.add(90);
-        quizPoints.add(85);
-        quizPoints.add(40);
-        quizPoints.add(60);
-        quizPoints.add(70);
-        System.out.println(quizPoints);
-
-        quizPoints.remove(2);
-        quizPoints.removeFirst();
-        System.out.println(quizPoints);
+        System.out.println(studentMap.get("195abc"));
     }
 }
 
