@@ -2,13 +2,12 @@ import java.util.HashMap;
 
 public class LinkedLists {
     public static void main(String args[]) {
-        // HashMap similar to object, has key value pairs
-        HashMap<String, String> studentMap = new HashMap<String, String>();
+        HashMap<String, String> dict = new HashMap<String, String>();
 
-        studentMap.put("195abc", "Mabel");
-        studentMap.put("542jjjk", "Kareem");
+        dict.put("apple", "a fruit from a tree");
+        dict.put("lake", "a large body of water");
 
-        System.out.println(studentMap.get("195abc"));
+        System.out.println(dict.get("apple"));
     }
 }
 
