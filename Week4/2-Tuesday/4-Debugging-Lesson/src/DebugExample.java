@@ -1,11 +1,11 @@
 public class DebugExample {
     public static void main(String args[]) {
-        printSomething();
+        int[] arr = {1,2,3,4};
+        printSomething(arr);
     }
 
-    public static void printSomething(String s) {
-        System.out.println(s);
-        System.out.println(s.length());
+    public static void printSomething(int[] arr) {
+        System.out.println(arr[0]);
     }
 
 
