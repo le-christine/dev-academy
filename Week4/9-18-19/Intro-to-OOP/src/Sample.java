@@ -13,6 +13,14 @@ public class Sample {
         return this.name;
     }
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getAddress() {
+        return this.address;
+    }
+
     // Use setter and getters to set/get private variables
 
     public static void main(String[] args) {
@@ -21,5 +29,8 @@ public class Sample {
         System.out.println(casey.getName());
         casey.setName("Suresh");
         System.out.println(casey.getName());
+        casey.setAddress("123 Main St");
+        System.out.println(casey.getAddress());
+
     }
 }
