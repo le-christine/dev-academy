@@ -85,6 +85,7 @@ public class Animal {
         //Set new name, speed, and endangered properties values using setters
         animal.setName("Lion");
         animal.setTopSpeed(50);
+        animal.setNumLegs(4);
         animal.setEndangered(true);
 
         //get new values using getters
