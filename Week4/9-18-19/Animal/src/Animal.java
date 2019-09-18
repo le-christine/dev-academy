@@ -5,19 +5,15 @@ public class Animal {
     private boolean isEndangered;
     private String name;
 
-
     //Put constructor here
-    public void Animal(int numLegs, int topSpeed, boolean isEndangered, String name) {
+    public Animal(int numLegs, int topSpeed, boolean isEndangered, String name) {
         this.numLegs = numLegs;
         this.topSpeed = topSpeed;
         this.isEndangered = isEndangered;
         this.name = name;
     }
+    public Animal() {
 
-    public void Animal(int numLegs, int topSpeed, String name) {
-        this.numLegs = numLegs;
-        this.topSpeed = topSpeed;
-        this.name = name;
     }
 
     //Put getters and setters here
