@@ -53,9 +53,19 @@ public class Animal {
         return this.name;
     }
 
+    /* bonus
+    Introduce method returns a formatted String using the class properties
+     */
+
+    public String introduce() {
+        String output = String.format("The %s has %d legs and a top speed of %d mph.",
+                this.name, this.numLegs, this.topSpeed);
+        return output;
+    }
+
 
     public static void main(String[] args) {
-        System.out.println("Hello, world");
+        // System.out.println("Hello, world");
         //Instantiate new Animal
         Animal animal = new Animal() ;
 
@@ -82,7 +92,6 @@ public class Animal {
         topSpeed = animal.getTopSpeed();
 
         //Print some output
-        System.out.println("The " + name + " has a top speed of " +
-                topSpeed + " mph.");
+        System.out.println(animal.introduce());
     }
 }
