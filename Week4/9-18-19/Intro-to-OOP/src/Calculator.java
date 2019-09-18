@@ -11,7 +11,8 @@ public class Calculator {
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
-        double mySum = calc.Sum(10.50,5.75);
-        System.out.println(mySum);
+        System.out.println(calc.Sum(10.50,5.75));
+        System.out.println(calc.Sum(5,6));
+        System.out.println(calc.Sum(4.56,5.46));
     }
 }
