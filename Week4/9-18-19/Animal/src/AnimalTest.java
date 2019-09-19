@@ -3,9 +3,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class AnimalTest {
-
+    // initialize the animal before tests so it's accessible to all
     private Animal zebra;
-    private Animal gator;
 
     @Before
     public void animalObjects() {
