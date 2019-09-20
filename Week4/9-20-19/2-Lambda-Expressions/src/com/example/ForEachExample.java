@@ -28,15 +28,6 @@ public class ForEachExample {
         // lambda function "forEach" to print each element in list
         myList.forEach(m -> System.out.println(m));
 
-        // Stream is a sequence of elements that moves values from a source,
-        // such as a collection, through a pipeline of steps.
-        // Stream operations leverage Lambda expressions to produce a result.
-        /*
-        Stream stream = myList.stream();
-        myList.stream().forEach(stringValue -> {
-            System.out.println(stringValue);
-        });
-       */
 
     }
 
