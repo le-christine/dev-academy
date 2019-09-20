@@ -35,7 +35,7 @@ public class Main {
         Dog pal = new Dog();
 
         System.out.println("J comes home from work. TGIF, and payday!");
-        jHouse.earnIncome(2400);
+        jHouse.earnIncome(2366);
         jHouse.netIncome();
         System.out.println(jHouse.introduce());
         System.out.println("J plays with the pet");
@@ -46,7 +46,7 @@ public class Main {
         System.out.println("J brushes the pet");
         pal.groom();
         System.out.println("The next morning J sells some items.");
-        jHouse.earnIncome(100);
+        jHouse.earnIncome(245);
         jHouse.netIncome();
         System.out.println(jHouse.introduce());
         System.out.println("Happy Pet, Happy Life.");
