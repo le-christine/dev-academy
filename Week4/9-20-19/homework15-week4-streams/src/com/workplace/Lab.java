@@ -1,5 +1,6 @@
 package com.workplace; // Put in whatever package your files are in
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.time.LocalDate;
@@ -63,6 +64,8 @@ public class Lab {
                 .orElse(0);
         System.out.println("Max: $" + (int) max);
 
+        //test
+        Assert.assertEquals(95_035.00, max, 0);
     }
 
     @Test
@@ -77,6 +80,9 @@ public class Lab {
                 // if empty stream, return 0
                 .orElse(0);
         System.out.println("Min: $" + (int) min);
+
+        //test
+        Assert.assertEquals(37_210.00, min, 0);
     }
 
     @Test
@@ -102,6 +108,11 @@ public class Lab {
         System.out.println("Averages: Male: $" + averageMale + " Female: $" + averageFemale);
         System.out.println("Averages: Male: $" + averageMale + " Female: $" + averageFemale);
         System.out.println("#equalPay");
+
+        // test
+        Assert.assertEquals(71_502.5, averageMale, 0);
+        Assert.assertEquals(62_528, averageFemale, 0);
+
     }
 
     @Test
@@ -116,6 +127,8 @@ public class Lab {
                         person1 : person2)
                 .get();
         System.out.println(highest);
+
+        Assert.assertEquals("Buffet, Warren", highest.getName());
     }
 
 }
