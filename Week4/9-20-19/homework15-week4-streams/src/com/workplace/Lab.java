@@ -115,7 +115,6 @@ public class Lab {
                 .reduce((person1,person2) -> (person1.getSalary() > person2.getSalary()) ?
                         person1 : person2)
                 .get();
-
         System.out.println(highest);
     }
 
