@@ -128,6 +128,7 @@ public class Lab {
                 .get();
         System.out.println(highest);
 
+        // test
         Assert.assertEquals("Buffet, Warren", highest.getName());
     }
 
