@@ -1,0 +1,96 @@
+/* COMMON COMMANDS
+\c - connect to a database
+\l - list all databases
+\d - describes data table
+*/
+
+/* CREATING A TABLE */
+/* keywords for posgres */
+CREATE TABLE students (
+
+/*once we create a table we need to insert rows/columns
+serial is a data type in DBS, is generated as a unique identifier
+PK is a unique key */
+
+student_id SERIAL PRIMARY KEY,
+name TEXT NOT NULL,
+age INT NOT NULL,
+mobile VARCHAR(50)
+);
+
+/* INSERTING VALUES TO A TABLE */
+INSERT INTO students VALUES (DEFAULT, 'John Smith', 28, '999-999-9999');
+/* should get INSERT 0 1 */
+
+
+/* see the entire table */
+SELECT * FROM students;
+
+/* select specific columns */
+SELECT column_name FROM students;
+
+/* PROJECTION */
+ga=# SELECT age, mobile FROM students;
+ age |    mobile    
+-----+--------------
+  28 | 999-999-9999
+  28 | 999-999-9999
+  23 | 123-456-7891
+  25 | 877-393-4448
+  16 | 
+(5 rows)
+
+ga=# SELECT mobile, age FROM students;
+    mobile    | age 
+--------------+-----
+ 999-999-9999 |  28
+ 999-999-9999 |  28
+ 123-456-7891 |  23
+ 877-393-4448 |  25
+              |  16
+(5 rows)
+
+This doesn’t affect the data, it only manipulates how it’s displayed
+
+/* WHERE CLAUSE is always followed by a conditional expression */
+Helps us select more specific data
+
+ga=# SELECT name FROM students WHERE age < 25;
+      name       
+-----------------
+ Henrietta Jones
+ Jane Doe
+(2 rows)
+
+ga=# SELECT * FROM students WHERE mobile IS NULL;
+ student_id |      name       | age | mobile 
+------------+-----------------+-----+--------
+          7 | Laura Rossi     |  70 | 
+          9 | Greg Fitzgerald |  25 | 
+(2 rows)
+
+/* CAN ASCEND DESCEND */
+
+ga=# SELECT name, age FROM students WHERE age < 40 ORDER BY age ASC;
+ga=# SELECT name, age FROM students WHERE age < 40 ORDER BY age DESC;
+
+
+/* USE ‘LIKE’ KEYWORD */ 
+SELECT * FROM students WHERE mobile LIKE '%910%';
+
+/* UPDATE */
+
+UPDATE students SET mobile = '212-897-9282' WHERE name = 'John Smith';
+
+/* DELETE */
+DELETE FROM students where name = ‘Jane Doe’;
+
+create a relationship between the two tables
+ALTER - change the description of the existing table
+
+ga=# ALTER TABLE students ADD COLUMN student_address_id INT;
+
+ga=# ALTER TABLE students ADD CONSTRAINT fk_students_address FOREIGN KEY (student_address_id) REFERENCES address (address_id);
+
+
+
