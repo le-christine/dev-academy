@@ -1,0 +1,32 @@
+Domain Driven Design (DDD) - combining business needs and software needs
+(e.g. we will have users ---> these users will post)
+
+Some domains we would have in a shopping website would be:
+
+- customer
+- inventory 
+- products
+	- clothing (subdomain)
+	- electronics
+- vendors
+
+
+In case of a cascade failure, instead of taking down the entire DB, we can mitigate failures. 
+
+TIMEOUT : Helps us handle failures.  Only wait for a response for a certain amount of time (always set defaults).
+
+Circuit Breaker: A timeout does not prevent our application from slowing down.
+With a circuit breaker, after a certain number of failed requests to the external service, the circuit is considered broken.
+
+Bulkhead Pattern: Allows a user to know when things will be back up, in case something fails
+
+
+VIRTUAL MACHINE (VM) : When OS Kernal starts, it allocates X memory for RAM, and does IO. Linux and Windows will do things differently. A VM will take in all the configurations and layers it on top of the host OS ("manufacture an environment"
+	- great but also huge, because it contains mini-OS that directs everything, and separate compiler to process
+
+... ENTER CONTAINERS!
+
+- Docker : a tool designed to make it easier to create, deploy, and run applications by using containers 
+- A container uses the host OS to tap into it. 
+
+

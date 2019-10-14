@@ -1,0 +1,23 @@
+- Docker containers have instructions to spin up the code on different OS
+- Different developers can work on different machines, from the same code base
+
+PROS:
+- battle tested
+- small, take up less space than VMs
+- uses less resources
+- well documented
+- fast execution
+- simple
+- scale
+- fast onboarding
+- #'s 
+
+CONS:
+- networking: isolating accessibility of some aspects of the container
+- prior knowledge
+- bad for GUI -> backend
+- Can be bottlenecked
+- Can't run w/o emulation
+- No data persistence
+- cross compatibility issues
+- root access / overlooked security
