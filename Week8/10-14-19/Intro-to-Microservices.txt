@@ -1,0 +1,28 @@
+We've been working on monoliths (controllers <-> etc <-> models) where everything is in one place. Think about AOL, we had to install the program from the disk (held the entire monolith) [pre 2000s]
+	- if one aspect goes down, the whole thing goes down
+	- manging complexity is easier
+	- hold things on different servers
+	- testing is easier
+
+When we talk about microservices we are thinking about how if we had something separated, e.g. user (localhost 8081), friends (localhost 8080), posts (localhost 8082) so we can isolate only one aspect when we are developing
+
+PROS:
+- faster onboarding 
+- faster code "upgrades"
+- team breakup mirrors microservices
+- optimize for speed and efficiency goes w/ it
+- react quickly to new users (act on feedback)
+- adapt adapt adapt
+- promotes innovation to create new experiences that attract new customers
+- invites more growth
+
+CONS:
+- tech debt -> harder to "upgrade"
+- expensive
+- slower dev speed
+- harder to manage (e.g. many microservices being spun up and deleted)
+- harder for small teams to manage/execute
+- easier to introduce errors
+- slower initial buildout
+
+
