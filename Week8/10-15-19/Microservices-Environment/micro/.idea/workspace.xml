@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bc7aa093-532f-4e1a-9aae-c8e161f7b90c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../Week4/9-20-19/homework15-week4-streams/out/production/homework15-week4-streams/com/workplace/Lab.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week4/9-20-19/homework15-week4-streams/out/production/homework15-week4-streams/com/workplace/Lab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week4/9-20-19/homework15-week4-streams/src/com/workplace/Lab.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week4/9-20-19/homework15-week4-streams/src/com/workplace/Lab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/config/JwtRequestFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/config/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/controller/CourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/controller/UserProfileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/controller/UserRoleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/models/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/models/JwtResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/models/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/models/UserCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/models/UserProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/models/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/repositories/CourseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/repositories/UserProfileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/repositories/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/repositories/UserRoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/service/CourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/service/CourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/service/UserProfileService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/service/UserProfileServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/service/UserRoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/service/UserRoleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/java/com/example/springbootmonolith/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/resources/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/1-Monday/1-Springboot-Security/spring-boot-monolith/src/test/java/com/example/springbootmonolith/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/10-03-19/springbootmongo/src/main/java/com/example/springbootmongo/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week6/10-03-19/springbootmongo/src/main/java/com/example/springbootmongo/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Week6/10-1-19/1-Springboot-Testing/spring-boot-monolith/src/test/java/com/example/springbootmonolith/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week6/10-1-19/1-Springboot-Testing/spring-boot-monolith/src/test/java/com/example/springbootmonolith/service/UserServiceTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1SFENp3UtacUW5gjVyf9citRum1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc7aa093-532f-4e1a-9aae-c8e161f7b90c" name="Default Changelist" comment="" />
+      <created>1571150906072</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571150906072</updated>
+      <workItem from="1571150909167" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
