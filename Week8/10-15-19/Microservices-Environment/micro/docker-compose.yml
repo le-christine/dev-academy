@@ -45,3 +45,14 @@ services:
     command: 'mvn spring-boot:run'
     environment:
       - SPRING_PROFILES_ACTIVE=dev
+  postgresdev:
+    # to use postgres as our database
+    image: postgres
+    # port to run the DB
+    ports:
+      - "5432:5432"
+    # set the username, password, and name of db
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=pgdev
