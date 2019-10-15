@@ -8,6 +8,7 @@ services:
     # use jdk 1.8 with maven
     image: maven:3.6.1-jdk-8
     # open the port 8761; in eureka project we have set 8761 as our primary
+    # hostname:port
     ports:
       - '8761:8761'
     # set working dir as /app
