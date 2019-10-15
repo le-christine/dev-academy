@@ -1,17 +1,25 @@
+# using the version
 version: '3'
 
+# list of services from the docker
 services:
+  # for the eureka server
   eureka:
+    # use jdk 1.8 with maven
     image: maven:3.6.1-jdk-8
+    # open the port 8761; in eureka project we have set 8761 as our primary
     ports:
       - '8761:8761'
-#    we want docker to make a folder 'app' that runs this
+    # set working dir as /app
     working_dir: /app
+    # create volume for the server
     volumes:
       - ./eureka-server:/app
+    # tells docker to run the application
     command: 'mvn spring-boot:run'
+    # loaf our primary profile from the
     environment:
-      - SPRING_PROFILES_ACTIVE = dev
+      - SPRING_PROFILES_ACTIVE=dev
   api-gateway:
     image: maven:3.6.1-jdk-8
     ports:
@@ -23,4 +31,4 @@ services:
       - eureka
     command: 'mvn spring-boot:run'
     environment:
-      - SPRING_PROFILES_ACTIVE = dev
+      - SPRING_PROFILES_ACTIVE=dev
