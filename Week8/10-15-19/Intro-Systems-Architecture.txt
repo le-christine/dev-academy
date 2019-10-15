@@ -1,0 +1,36 @@
+What is an architect? 
+Somebody who makes a blueprint for the contractors to follow. He doesn't actually work with the materials. 
+
+Software design is like renovating a bathroom and making sure it works well with everything else (e.g. the pipes, kitchen, etc)
+
+They think about:
+- materials [tech stack, front-end and back-end]
+- cost [manpower, server, hosting, etc]
+- stability - safety - foundation [permissions, ex. Project 2 & using jwt tokens]
+- scalable [handling high traffic]
+* efficiency
+* contractors
+* estimated time of project
+
+* : fall under same category
+
+FOUR PRIORITIES:
+1. Scalability
+2. Security
+3. Flexibility
+4. Feasibility - is it achievable if cost (manpower/money/time) gets in the way?
+
+JOB TITLES: Software Architect, Solutions Architect
+
+- language agonistic
+- have the design principles down
+- resourceful
+- managing/communicating to teams, clients on how to approach their code
+- coordination
+- highly experienced
+
+DESIGN PATTERNS:
+1. Serverless: 3rd party tech and providers are relied upon to manage the complexity of the serves and back-end systems. E.g. using Amazon's services because they are experts at scalability.
+2. Event-driven: consumer + producer (think JavaScript event listeners/ DOM manipulation)
+3. Microservices: Depends on small, independent services that are de-coupled and solve specific problem or perform a unique task. The services communicate with each other through APIs. 
+
