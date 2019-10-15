@@ -10,10 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableEurekaClient
 @RestController
 public class UserApiApplication {
-
+	/**
+	 * Map to home page or index page
+	 * @return
+	 */
 	@RequestMapping("/")
 	public String home() {
-		return "some users";
+		return "Some Users";
 	}
 
 	public static void main(String[] args) {
