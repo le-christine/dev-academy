@@ -1,0 +1,9 @@
+- Like GitHub, there is a docker hub you can pull, push to
+- Docker daemon is a process waits for a request and it processes that request
+
+
+to spin up the container: docker run [container]
+to stop running the container: docker stop [first few characters of container ID]
+confirm container stop: docker ps -a
+remove a stopped container: docker rm [first few chars of container ID]
+remove the layered file system: docker rmi [container] ( will no longer see the container when you do docker images)
