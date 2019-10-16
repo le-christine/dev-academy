@@ -1,0 +1,26 @@
+What is the cloud?
+
+- The cloud isn't literally in the cloud, it's a concept that in reality is a bunch of servers.
+
+- How does it work? Accessible via the internet. Software and services that run on the internet rather than your locally on your computer
+- How is it purchased? Providers such as Google or Apple will provide subscription plans, and customers decide between how much storage they need.
+- What functionality does it provide? Services are offered (e.g. Google Drive/ File management/ Video platform/ Hosting/Streaming) and it provides more storage.
+
+- Amazon made it super popular
+- Needed a lot of servers because they had large runtimes. They bought a lot of servers and when it wasn't used, offered that as a service to other websites.
+
+PROS:
+- Accessible anywhere as long as you have internet
+- Cost
+- Scalability
+- Not having to worry
+- Not having to physically be present
+
+CONS:
+- Trust/ security
+- Cost
+- Speed
+- Can't access data w/o internet
+- Less agency
+
+ 

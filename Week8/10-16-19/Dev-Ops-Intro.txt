@@ -1,0 +1,25 @@
+DevOps: Development Operations - if you enjoy Docker this is for you
+
+	- planning (sprints) ->
+	- build the app ->
+	- testing & integration ->
+	- deployment
+	- continuous feedback ->
+	REPEAT
+
+Before DevOps it was not continuous, you would plan and build, then deploy. Teams would work separately. This led to conflict bc after dev team completed the task, they would take a break until problems arose.
+
+DevOps relieves the tenson between development teams and operation teams by fostering collaboration & breaking down silos.
+Allows faster innovation and more responsive to busineeds needs. As a result, code is better quality and can be put into production faster.
+
+workflow may look like:
+new code -> testing code -> VCS -> deplyoment 
+
+Since Docker is a container, it can help with the Deployment phase of DevOps
+
+CALMS:
+Culture - cross functional collaboration requires soft skills 
+Automation - Automation make the process of build, test and deploy faster.
+Lean - Focuses heavily on continuous improvement
+Measurement - It's important to track internal metric such as time from development to deployment 
+Sharing - Sharing goals, successes, failures, and responsibilities bridges the divide between Dev and Ops teams
