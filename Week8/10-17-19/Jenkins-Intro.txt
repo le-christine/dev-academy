@@ -1,0 +1,4 @@
+Jenkins: part of an automated process; before you even make a Docker container Jenkins runs test to check if the container would be reached.
+After, the code goes through continuous testing. Devs add and commit often per feedback.
+
+Continuous Integration (CI) & Continuous Delivery (CD)

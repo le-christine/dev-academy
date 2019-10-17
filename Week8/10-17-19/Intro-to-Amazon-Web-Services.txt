@@ -1,0 +1,26 @@
+What is a web server?
+
+If you host a website you need a web server.
+
+Traditionally some issues making your own servers include:
+- Maintenance; hardware upgrades
+- Maintenance; software upgrades
+
+If you opt for AWS you don't have to worry about these issues. AWS is also scalable. Today you might only need a $10 server
+but in 5 years when your user base grows to 10M you will need more space.
+
+Key concepts:
+Amazon Elastic Computer Cloud (Amazon EC2) runs on a computer located in one of many Amazon data centers
+Many EC2 instances can run on one computer or across many.
+- if your "home" data center is down another center has a copy of your application and will run it
+
+Some microservices:
+Compute - EC2 - creates instances
+Storage - S3 - "a thousand" storage
+Database - DynamoDB Amazon's version of MongoDB, a NoSQL database
+CloudFront - network load balancer
+Developer Tools - CodeStar - quickly develop, build and deploy applications on AWS.
+
+alarm status on your instances to be triggered when memory running out, or high traffic, etc
+
+
