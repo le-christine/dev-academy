@@ -18,15 +18,14 @@ let animals = [{
 }
 ]
 
-let cards = animals.map((animal, index) =>
-  <Card key = {index} image ={animal.image} title={animal.title}
-  description={animal.description}/>)
-
 class List extends Component {
   render() {
     return (
       <div>
-      {cards}
+      {animals.map((animal, index) =>
+        <Card key = {index} image ={animal.image} title={animal.title}
+        description={animal.description}/>
+      )}
       </div>
     )
   }
