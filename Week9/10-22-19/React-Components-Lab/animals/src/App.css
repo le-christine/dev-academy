@@ -10,3 +10,15 @@ h1 {
 button {
   margin-right: 25px;
 }
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 25%;
+  height: 25%;
+  background-size: contain;
+}
