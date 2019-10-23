@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
 // Custom components
 import Home from './Home'
@@ -16,9 +21,12 @@ class App extends Component {
         */}
 
         <Router>
-        <div exact path="/" component={Home} />
-
+            <div exact path="/" component={Home} />
+            <div path="/procedures" component={Procedures} />
+            <div path="/contact" component={Contact} />
+        </Router>
       </div>
+
     );
   }
 }
