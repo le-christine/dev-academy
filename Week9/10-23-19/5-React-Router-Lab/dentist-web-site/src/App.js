@@ -15,17 +15,20 @@ class App extends Component {
     return (
       <div className="App">
 
-        {/* Two ways to call components
-            <Home />
-            <Home></Home>
-        */}
-
         <Router>
-            <div exact path="/" component={Home} />
-            <div path="/procedures" component={Procedures} />
-            <div path="/contact" component={Contact} />
+        <nav>
+         <Link to="/">Home</Link>{' '}
+         <Link to="/procedures">Procedures</Link>{' '}
+         <Link to="/contact">Contact</Link>{' '}
+        </nav>
+         <div>
+          <Route exact path="/" component={Home} />
+          <Route path="/procedures" component={Procedures} />
+          <Route path="/contact" component={Contact} />
+        </div>
         </Router>
       </div>
+
 
     );
   }
