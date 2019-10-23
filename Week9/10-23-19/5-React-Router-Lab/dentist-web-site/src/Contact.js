@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 
+
+import Content from './Content';
+
 class Contact extends Component {
   render() {
     return (
-      <div>
+      <div className="content">
+        <Content/>
+        <div className = "info">
+
         <h1>Contact</h1>
 
         <p>
@@ -26,6 +32,7 @@ class Contact extends Component {
           Dental Town, USA 99555
         </p>
       </div>
+    </div>
 
     );
   }

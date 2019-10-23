@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
+import Content from './Content';
+
 class Procedures extends Component {
   render() {
     return (
-      <div>
+      <div className = "content">
+        <Content/>
+        <div className="info">
         <h1>Procedures</h1>
 
         <p>
@@ -22,6 +26,7 @@ class Procedures extends Component {
           <li>Tooth Removal</li>
           <li>Root Canals</li>
         </ul>
+      </div>
       </div>
     );
   }

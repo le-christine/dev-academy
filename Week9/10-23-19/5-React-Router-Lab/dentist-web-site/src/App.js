@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './App.css';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -14,9 +16,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <Router>
-        <nav>
+        <nav className="nav-bar">
          <Link to="/">Home</Link>{' '}
          <Link to="/procedures">Procedures</Link>{' '}
          <Link to="/contact">Contact</Link>{' '}
