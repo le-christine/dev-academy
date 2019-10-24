@@ -1,4 +1,52 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
+const Button = styled.button`
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+  &:hover{
+    background-color: #6FC6FF
+  }
+  &:active{
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+  }
+  &:focus {
+    outline:none !important;
+  }
+`;
+
+const ErrorButton = styled(Button)`
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #CE3323;
+  &:hover{
+    background-color: #FF6656;
+  }
+`;
+
+const SuccessButton = styled(Button)`
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15B358;
+  &:hover{
+    background-color: #48E68B;
+  }
+`;
+
+const InfoButton = styled(Button)`
+  background-color: #f1c40f;
+  box-shadow: 0px 5px 0px 0px #D8AB00;
+  &:hover{
+    background-color: #FFDE29;
+  }
+`;
 
 
 class Calculator extends Component {
@@ -77,20 +125,6 @@ class Calculator extends Component {
   }
 
   render() {
-    const buttonStyles = {
-      borderRadius: "5px",
-      padding: "15px 25px",
-      fontSize: "22px",
-      textDecoration: "none",
-      margin: "20px",
-      color: "#fff",
-      position: "relative",
-      display: "inline-block",
-      backgroundColor: this.state.hover ? "#6FC6FF" : "#55ACEE",
-      transform: this.state.click ? "translate(0px, 5px)" : "",
-      boxShadow: this.state.click ? "0px 1px 0px 0px" : ""
-    };
-
 
     return (
       <div className = "container">
@@ -100,16 +134,10 @@ class Calculator extends Component {
           <h3>{this.state.output}</h3>
             {/*if we pass a variable as a callback it will invoke it right away
             we need to wrap this as an anonymous function with the closure syntax*/}
-          <button 
-            style={buttonStyles}
-            onClick={()=>this.calculateIt("+")}
-            onMouseEnter={this.hoverEnter}
-            onMouseLeave={this.hoverLeave}
-            onMouseDown={this.mouseDown}
-            onMouseUp={this.mouseUp}>Add</button>
-          <button onClick={()=>this.calculateIt("-")}>Substract</button>
-          <button onClick={()=>this.calculateIt("*")}>Multiply</button>
-          <button onClick={()=>this.calculateIt("/")}>Divide</button>
+          <Button onClick={()=>this.calculateIt("+")}>Add</Button>
+          <ErrorButton onClick={()=>this.calculateIt("-")}>Substract</ErrorButton>
+          <SuccessButton onClick={()=>this.calculateIt("*")}>Multiply</SuccessButton>
+          <InfoButton onClick={()=>this.calculateIt("/")}>Divide</InfoButton>
         </div>
     )
   }
