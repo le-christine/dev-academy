@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import DogPics from './DogPics';
+import OneDogPic from './OneDogPic';
 
 class App extends Component {
   constructor() {
@@ -24,6 +25,7 @@ class App extends Component {
           <option>Select One!</option>
           <option value="dog-pics">Dog pics app</option>
           <option value="homework">Homework app</option>
+          <option value="one-dog-pic">One dog pic</option>
         </select>
         <div className="feature-section">
           {this.state.selectedFeature === 'dog-pics' &&
@@ -34,6 +36,9 @@ class App extends Component {
               <img src="http://www.animatedgif.net/underconstruction/anim0205-1_e0.gif" alt="Under Construction"/>
               <h1>Coming Soon!</h1>
             </div>
+          }
+          {this.state.selectedFeature === 'one-dog-pic' &&
+            <OneDogPic />
           }
         </div>
       </div>
