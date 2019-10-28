@@ -2,7 +2,9 @@ console.log('js is connected');
 
 function clearResults() {
   const movieList = document.querySelector('.movieResults');
+  const warning = document.querySelector('.warning');
   movieList.innerHTML = '';
+  warning.innerText='';
 }
 
 function getMovies() {
@@ -13,18 +15,24 @@ function getMovies() {
     return res.json();
   })
   .then((res) => {
-    manipulateDom(res);
+    console.log(res);
+    manipulateDom(res, query);
   })
   .catch((error) => {
     console.log(error);
   })
 }
 
-function manipulateDom(res) {
+function manipulateDom(res, query) {
+  if (res.Search) {
   const movieList = document.querySelector('.movieResults');
   for (let i = 0; i<res.Search.length; i++) {
     const result = document.createElement('li');
-    result.innerText = res.Search[i].Title;
+    result.innerText = res.Search[i].Title + ', released ' + res.Search[i].Year;
     movieList.appendChild(result);
+    }
+  } else {
+    const warning = document.querySelector('.warning');
+    warning.innerText = 'No movies match the title of: ' + query;
   }
 }
